@@ -1,0 +1,5 @@
+<svg id="Input_delete" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <path id="패스_530" data-name="패스 530" d="M0,0H20V20H0Z" fill="none" fill-rule="evenodd"/>
+  <circle id="타원_114" data-name="타원 114" cx="9" cy="9" r="9" transform="translate(1 1)" fill="#868a93"/>
+  <path id="패스_531" data-name="패스 531" d="M13.21,6.79a.72.72,0,0,1,0,1.02L11.018,10l2.19,2.19a.721.721,0,1,1-1.018,1.02L10,11.018l-2.19,2.19A.721.721,0,0,1,6.79,12.19L8.982,10,6.792,7.81A.721.721,0,1,1,7.81,6.79L10,8.982l2.19-2.19a.72.72,0,0,1,1.02,0Z" fill="#fff"/>
+</svg>
