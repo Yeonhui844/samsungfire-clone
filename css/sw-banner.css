@@ -1,8 +1,32 @@
-.sw-banner .swiper {
+.sw-banner-section {
+  position: relative;
+  width: 100%;
+  height: 34rem;
+  margin-top: 0;
+  padding: 0;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+
+.sw-banner {
   width: 100%;
   height: 100%;
 }
-
+.sw-banner .swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  transition-duration: 400ms;
+  transform: translate3d(-3880px, 0px, 0px);
+  z-index: 1;
+  transition-property: transform;
+  transition-timing-function: ;
+  box-sizing: content-box;
+  border-radius: 60px;
+}
 .sw-banner .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -10,6 +34,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
 
 .sw-banner .swiper-slide img {
@@ -17,4 +42,74 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.page-nav {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 0.4rem;
+  width: 12.8rem;
+  height: 3rem;
+  padding: 0 1.4rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1.5rem;
+  z-index: 3;
+}
+
+.swiper-pagination {
+  position: relative;
+  display: flex;
+  font-size: 1.4rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+  line-height: 1.6rem;
+  bottom: 0;
+  font-family: "SS-regular", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  width: 40px;
+  background-position: center;
+  z-index: 4;
+}
+
+.next-btn {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.swiper-pagination .swiper-pagination-total {
+  padding-left: 5px;
+  opacity: 0.5;
+}
+.swiper-pagination .swiper-pagination-current {
+  padding-right: 5px;
+}
+
+.swiper-pagination .swiper-pagination-total::before {
+  content: "";
+  width: 1px;
+  height: 1.4rem;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 0.6;
+  transform: translateY(-50%);
+}
+
+.play-stop-btn {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/main/homepage/slider_stop.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
 }

@@ -30,7 +30,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 2.8rem;
+  gap: 0 1.2rem;
 }
 
 .service-menu-list-1 {
@@ -38,7 +38,7 @@
 }
 .service-menu-list-1 > ul {
   display: flex;
-  gap: 1.2rem;
+  gap: 0 1.2rem;
 }
 .service-menu-list-1 > ul > li {
   display: flex;
@@ -47,18 +47,19 @@
   font-size: 1.4rem;
   line-height: 2.1rem;
   color: #868a93;
+  border-right: 1px solid #e5e5e5;
+  padding-right: 1.4rem;
 }
 
 .service-menu-list-1 > ul > li > a {
   color: #0b0d0f;
   font-size: 1.4rem;
-  font-weight: 700;
-  border-right: 1px solid #e5e5e5;
+  font-family: "SS-bold", sans-serif;
 }
 
 .service-menu-list-1 > ul > li:last-child > a {
   color: #0068ff;
-  font-weight: 700;
+  font-family: "SS-bold", sans-serif;
 }
 
 .service-menu-list-2 {
@@ -66,15 +67,134 @@
 }
 .service-menu-list-2 > ul {
   display: flex;
+  gap: 0 1.6rem;
 }
 .service-menu-list-2 > ul > li {
 }
 .service-menu-list-2 > ul > li > a {
+  color: #868a93;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 .header-top-right {
+  position: relative;
+  border: 0.1rem solid #e5e5e8;
+  border-radius: 0.8rem;
+  height: 2.8rem;
 }
+.header-top-right > ul {
+  position: relative;
+  display: flex;
+  height: 100%;
+}
+
+.header-top-right > ul > li {
+  height: 100%;
+}
+.header-top-right > ul > li > a {
+  padding: 0 1rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5a5b63;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  font-weight: 500;
+}
+
+.header-top-right ul li:last-child a {
+  border-left: 0.1rem solid #e5e5e8;
+}
+
 .header-bottom {
   position: relative;
+  top: 0px;
   width: 100%;
   height: 82px;
+  background-color: #fff;
+  z-index: 5;
+  /* border-bottom: 1rem solid #f1f1f3; */
+}
+
+.header-bottom.sticky {
+  position: fixed;
+  top: 0;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.06);
+}
+
+.header-bottom .inner {
+  height: 100%;
+  display: flex;
+  padding: 0 2.4rem;
+  margin: auto;
+  justify-content: space-between;
+}
+.header-bottom .inner .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 1rem;
+}
+.header-bottom .inner .logo > a {
+  flex: 0 0 9rem;
+  width: 9rem;
+  height: 2.6rem;
+}
+.header-bottom .inner .logo > a > img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+.gnb {
+}
+.gnb > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 3.2rem;
+  height: 100%;
+}
+.gnb > ul > li {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  height: 8.3rem;
+}
+.gnb > ul > li > a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  padding: 0.8rem;
+  font-size: 2rem;
+  line-height: 2.1rem;
+  white-space: nowrap;
+  font-family: "SS-bold", sans-serif;
+  color: #0b0d0f;
+}
+
+.etc-menu {
+  position: relative;
+}
+.etc-menu > ul {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+.etc-menu > ul > li {
+  width: 2.8rem;
+  height: 2.8rem;
+  position: relative;
+}
+.etc-menu > ul > li > a {
+  font-size: 1.6rem;
+  color: #0b0d0f;
+}
+.etc-menu > ul > li > a > img {
+  object-fit: cover;
 }

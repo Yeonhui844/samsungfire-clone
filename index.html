@@ -9,13 +9,16 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/sw-banner.css" />
     <link rel="stylesheet" href="css/sw-card.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/swCard.js" defer></script>
     <script src="js/swBanner.js" defer></script>
+    <script src="js/header.js" defer></script>
   </head>
   <body>
     <div class="wrap">
@@ -42,7 +45,7 @@
             </div>
             <div class="header-top-right">
               <ul>
-                <li><a href="#">회원가입</a></li>
+                <li><a href="#">회원 가입</a></li>
                 <li><a href="#">로그인</a></li>
               </ul>
             </div>
@@ -120,9 +123,28 @@
                   <div class="swiper-slide">Slide 6</div>
                   <div class="swiper-slide">Slide 7</div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+                <div class="page-nav">
+                  <div class="prev-btn">
+                    <a href="#"
+                      ><img src="images/main/homepage/slider_prev.svg" alt=""
+                    /></a>
+                  </div>
+                  <div class="swiper-pagination"></div>
+
+                  <div class="next-btn">
+                    <a href="#"
+                      ><img src="images/main/homepage/slider_next.svg" alt=""
+                    /></a>
+                  </div>
+                  <div class="play-stop-btn">
+                    <a href="#">
+                      <!-- <img
+                        src="images/main/homepage/slider_play.svg"
+                        alt="재생"
+                      />
+                    </a> -->
+                  </div>
+                </div>
               </div>
             </div>
             <!-- 자주찾는 메뉴 모바일 -->

@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+.main {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+}
+.main .inner {
+  width: 100%;
+  max-width: 123.4rem;
+  position: relative;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  padding: 0 2.4rem;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.main-left {
+  position: relative;
+  flex: 0 0 77.6rem;
+  width: 77.6rem;
+  order: 0;
+}
+
+/* 로그인 메뉴 모바일 */
+.login-wrap-mb {
+  display: none;
+}
+
+/* 자주찾는 메뉴 모바일 */
+.shortcut-wrap-mb {
+  display: none;
+}
+
+/* 사이드배너 모바일 */
+.side-banner-wrap-mb {
+  display: none;
+}
+
+.main-right {
+  position: relative;
+  flex: 0 0 33.5rem;
+  width: 33.5rem;
+  order: 1;
+}
+.product-section {
+  margin-top: 5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.product-section > h4 {
+  padding: 0 0.4rem;
+  margin-bottom: 1.6rem;
+  font-family: "SS-bold", sans-serif;
+  font-size: 2.6rem;
+  line-height: 3.4rem;
+}
+
+.product-wrap {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 0 3.2rem;
+}
+.product-left {
+  display: block;
+  flex: 0 0 17rem;
+  margin-top: 6rem;
+}
+
+.product-left > a {
+  display: block;
+}
+.product-left > a > img {
+  width: 17rem;
+  height: 17rem;
+}
+
+.product-left .text {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  color: #0b0d0f;
+}
+.product-left .text > p {
+}
+.product-rigth {
+  gap: 3rem 3.2rem;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
