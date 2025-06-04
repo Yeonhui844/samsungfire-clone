@@ -10,7 +10,7 @@ html,
 body {
   font-family: "SS-regular", sans-serif;
   font-size: 10px;
-  color: #000;
+  color: #0b0d0f;
   line-height: 1.5;
   text-size-adjust: 100%;
   letter-spacing: -0.23px;
@@ -25,7 +25,7 @@ li {
 
 a {
   display: block;
-  color: #000;
+  color: #0b0d0f;
   text-decoration: none;
 }
 

@@ -1,15 +1,37 @@
-.sw-card .swiper {
+.sw-card-section {
+  position: relative;
+  width: 100%;
+  height: 282px;
+  margin-top: 5rem;
+}
+
+.sw-card {
+  position: relative;
   width: 100%;
   height: 100%;
 }
+.sw-card .swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  border-radius: 60px;
+}
 
 .sw-card .swiper-slide {
+  position: relative;
   text-align: center;
   font-size: 18px;
   background: #444;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 236.667px;
+  margin-right: 33px;
+  height: 26rem;
+  margin-bottom: 2.2rem;
+  margin: 0 0 3rem;
 }
 
 .sw-card .swiper-slide img {
@@ -17,4 +39,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.sw-card .swiper-pagination {
+  position: relative;
 }
