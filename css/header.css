@@ -150,6 +150,7 @@
 .gnb {
 }
 .gnb > ul {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,10 +158,29 @@
   height: 100%;
 }
 .gnb > ul > li {
+  position: relative;
   display: flex;
   align-items: stretch;
   justify-content: center;
   height: 8.3rem;
+}
+
+.gnb > ul > li::after {
+  content: "";
+  position: absolute;
+  top: 79px;
+  left: 50%;
+  transform: translateX(-50%);
+  transform-origin: center;
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: #0b0d0f;
+  transition: all 0.5s;
+}
+
+.gnb > ul > li:hover::after {
+  width: 100%;
 }
 .gnb > ul > li > a {
   display: flex;
