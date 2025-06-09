@@ -164,6 +164,134 @@
   font-size: 1.6rem;
 }
 
+/* 알려드려요 고객지원 영역 */
+.notice-customer-section {
+  position: relative;
+  width: 100%;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.notice {
+  position: relative;
+  flex: 0 0 37.2rem;
+  width: 37.2rem;
+}
+.notice-header,
+.customer-header {
+  position: relative;
+  padding: 0.4rem;
+  margin-bottom: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 0.8rem;
+  color: #222;
+  flex-shrink: 1;
+}
+ {
+}
+.notice-customer-section h4 {
+  font-family: "SS-bold", sans-serif;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+.notice-header > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 0.4rem;
+  color: #868a93;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.notice-header > a > span {
+}
+.notice-header > a:hover > span {
+  text-decoration: underline;
+}
+
+.notice-header > a > img {
+  object-fit: contain;
+}
+.notice-list {
+  position: relative;
+}
+.notice-list > ul {
+  position: relative;
+  width: 100%;
+  padding: 0 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.notice-list > ul > li {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0 0.8rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+.notice-list > ul > li > a {
+  gap: 0 1.6rem;
+  padding: 1rem 0;
+  line-height: 2.4rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.notice-list > ul > li:hover > a {
+  text-decoration: underline;
+}
+
+.customer {
+  position: relative;
+  flex: 0 0 37.2rem;
+  width: 37.2rem;
+}
+.customer-list {
+  position: relative;
+}
+.customer-list > ul {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: auto;
+  margin: 0;
+  flex-wrap: wrap;
+  gap: 1.2rem 1.6rem;
+  width: 100%;
+}
+.customer-list > ul > li {
+  position: relative;
+  flex: 0 0 calc(50% - 0.8rem);
+  color: #0b0d0f;
+  background-color: #fff;
+  border-radius: 1.2rem;
+  line-height: 2.4rem;
+  cursor: pointer;
+  border: 0.1rem solid;
+  padding: 1.5rem 2rem;
+  min-height: 5.6rem;
+  border-color: #e5e5e8;
+}
+.customer-list > ul > li > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  vertical-align: middle;
+  word-break: break-all;
+  letter-spacing: -0.08rem;
+}
+.customer-list > ul > li:hover {
+  border-color: #5a5b63;
+}
+
 .main-right {
   position: relative;
   flex: 0 0 33.5rem;
@@ -262,14 +390,48 @@
   margin-top: 3rem;
 }
 .shortcut-wrap > h4 {
+  color: #222;
+  font-family: "SS-bold", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  gap: 0 0.8rem;
 }
 .shortcut-wrap > ul {
+  position: relative;
   display: flex;
   align-items: stretch;
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 2rem 1.3rem;
 }
+.shortcut-wrap > ul > li {
+  flex: 0 0 8.5rem;
+}
+.shortcut-wrap > ul > li > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.shortcut-wrap > ul > li > a > img {
+  width: 5.2rem;
+  height: 5.2rem;
+  margin: auto;
+}
+.shortcut-wrap > ul > li > a > span {
+  margin-top: 0.8rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  text-align: center;
+  letter-spacing: -0.08rem;
+}
+
 .side-banner-wrap {
   position: relative;
   margin-top: 3rem;
