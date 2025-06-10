@@ -205,3 +205,9 @@
   width: 3.7rem;
   height: 2.4rem;
 }
+
+@media screen and (max-width: 1219px) {
+  .footer-top {
+    display: none;
+  }
+}
