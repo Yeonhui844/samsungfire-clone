@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+.modal-wrap {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transition: all 0.5;
+  z-index: 60;
+}
+
+.modal-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* 모달 헤더 */
+.modal-header {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 54px;
+  z-index: 3;
+  padding-left: 2.4rem;
+  padding-right: 6.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fff;
+}
+
+.modal-nav-logo {
+  display: flex;
+  gap: 0 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  font-family: "SS-bold";
+}
+.modal-nav-logo .logo {
+}
+.modal-nav-logo .logo > a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 7rem;
+  height: 100%;
+}
+.modal-nav-logo .logo > a > span {
+  display: block;
+  font-size: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 2.2rem;
+  background-image: url(../images/common/logo-text-blk.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.modal-nav-logo .logo-btn {
+}
+.modal-nav-logo .logo-btn > a {
+}
+.modal-nav-logo .logo-btn > a > span {
+}
+.modal-close-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 2.4rem;
+  background-image: url(../images/common/ico-header-close.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 2.4rem;
+  height: 2.4rem;
+  z-index: 999;
+  cursor: pointer;
+}
+.modal-menu-wrap {
+  position: relative;
+  margin-top: 54px;
+  padding: 0 0 6rem;
+  background-color: #fff;
+}
+.modal-serchbar {
+  margin-bottom: 2.4rem;
+}
+.modal-serchbar input {
+  padding: 0 2rem;
+}
+.modal-menu-nav::after {
+  content: "";
+  width: 2.4rem;
+  height: 2.4rem;
+  background-image: url(../images/common/ico-search-24.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.modal-menu-nav {
+  position: sticky;
+  top: 54px;
+  z-index: 3;
+  background-color: #fff;
+}
