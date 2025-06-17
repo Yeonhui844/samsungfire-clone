@@ -136,6 +136,7 @@
   cursor: pointer;
 }
 .modal-menu {
+  position: relative;
 }
 
 .modal-menu-nav {
@@ -143,11 +144,7 @@
   top: 54px;
   z-index: 3;
   background-color: #fff;
-  display: flex;
   padding: 1.6rem 0;
-  gap: 0;
-  align-items: stretch;
-  justify-content: space-between;
 }
 
 .modal-menu-nav > ul {
@@ -233,26 +230,25 @@
 
 .modal-submenu {
   position: relative;
+  width: 100%;
 }
 
 .modal-submenu > li {
   position: relative;
   border-bottom: 0.1rem solid #f5f6f7;
+  width: 100%;
 }
 
 .modal-submenu > li > a {
   position: relative;
   font-size: 1.6rem;
   font-weight: 400;
-  line-height: 2.4rem;
   color: #0b0d0f;
   padding: 1.2rem 0 1.2rem 1.5rem;
-  text-align: left;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  gap: 1.6rem;
 }
 
 .modal-submenu > li > a::after {
@@ -263,7 +259,7 @@
   background: url(../images/common/ico-common-arrow-14.svg) no-repeat center;
   background-size: contain;
   transform: rotate(90deg);
-  transition: all 0.5s;
+  transition: transform 0.3s;
 }
 
 .modal-submenu > li > ul {
@@ -274,6 +270,7 @@
   /* border-top: 1px solid #f5f6f7; */
   margin-bottom: 1rem;
   overflow: hidden;
+  transition: height 0.3s;
 }
 .modal-submenu > li > ul > li {
   position: relative;
